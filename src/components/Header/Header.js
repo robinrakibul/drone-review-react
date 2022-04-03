@@ -3,7 +3,7 @@ import CustomLink from '../CustomLink/CustomLink';
 import './Header.css';
 const Header = () => {
     return (
-        <div className='d-flex justify-content-center mt-4 mb-4 container gap-5'>
+        <div className='d-flex flex-column flex-sm-column flex-md-row flex-lg-row justify-content-center mt-4 mb-4 container gap-5'>
                 <CustomLink to='/'>HOME</CustomLink>
                 <CustomLink to='/reviews'>REVIEWS</CustomLink>
                 <CustomLink to='/dashboard'>DASHBOARD</CustomLink>
