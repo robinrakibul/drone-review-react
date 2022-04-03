@@ -2,8 +2,11 @@ import React from 'react';
 import './Header.css';
 const Header = () => {
     return (
-        <div>
-            <h1>This is header</h1>
+        <div className='d-flex justify-content-between container'>
+            <div>DroneZone Review</div>
+            <div>
+                <p>Navlinks</p>
+            </div>
         </div>
     );
 };
