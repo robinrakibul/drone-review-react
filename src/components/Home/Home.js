@@ -6,7 +6,7 @@ const Home = () => {
         <div className='d-flex flex-wrap justify-content-between container'>
             <div>
                 <h1 className='main-title text-uppercase'>Capture Your Moments <span className='text-primary custom-text'>Flying</span></h1>
-                <h4 className='text-uppercase'>Buy The Drone And Make The Most Of Your Travel</h4>
+                <h4>Buy The Drone And Make The Most Of Your Travel</h4>
 
                 <button className='btn btn-primary p-3 mt-4'>Demonstration</button>
             </div>

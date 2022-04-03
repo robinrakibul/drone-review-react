@@ -5,20 +5,20 @@
 
 .custom-text:hover{
     transition: all ease-in-out 0.1s;
-    color: #0b4bad !important;
+    color: #4d8ceb !important;
 }
 
 
 /* Image zoom on hover */
 .img-hover-zoom {
     overflow: hidden;
-  }
+}
   
-  .img-hover-zoom img {
+.img-hover-zoom img {
     transition: transform .5s ease;
-  }
+}
   
 
-  .img-hover-zoom:hover img {
+.img-hover-zoom:hover img {
     transform: scale(1.1);
-  }
+}
