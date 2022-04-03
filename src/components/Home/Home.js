@@ -1,4 +1,5 @@
 import React from 'react';
+import CustomerReview from '../CustomerReview/CustomerReview';
 import './Home.css';
 
 const Home = () => {
@@ -14,10 +15,7 @@ const Home = () => {
                     <img className='rounded-3 mt-5' src="https://images.unsplash.com/photo-1512433457759-6222e69eade9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&height=420&q=100" alt="" />
                 </div>
             </div>
-            <div className='mt-5 pt-5'>
-                <h1>Customer Review ()</h1>
-
-            </div>
+            <CustomerReview></CustomerReview>
         </div>
     );
 };
