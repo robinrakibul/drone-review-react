@@ -1,0 +1,65 @@
+[
+    {
+        "id":1,
+        "name":"Mrs Gloria",
+        "rating":4,
+        "review":"Great drone with many advanced features. I had purchased the drone from this website and had fun using it",
+        "image":"https://randomuser.me/api/portraits/women/19.jpg"
+    },
+    {
+        "id":2,
+        "name":"Mr Tim",
+        "rating":4.5,
+        "review":"Best product from Mavic, Loved it! Recommended to buy.",
+        "image":"https://randomuser.me/api/portraits/men/97.jpg"
+    },
+    {
+        "id":3,
+        "name":"Mr Nicola",
+        "rating":5,
+        "review":"This drone is awesome. I have never flown anything in the sky before and was extremely nervous before the first flight!",
+        "image":"https://randomuser.me/api/portraits/men/90.jpg"
+    },
+    {
+        "id":4,
+        "name":"Mrs Windey",
+        "rating":5,
+        "review":"Heard so many great things and have watched friends fly this drone and it is amazing!",
+        "image":"https://randomuser.me/api/portraits/women/18.jpg"
+    },
+    {
+        "id":5,
+        "name":"Mr Travis",
+        "rating":4.6,
+        "review":"I don't even know where to start. This thing is amazing! I found the price hard to swallow, but it was justified once i started flying it.",
+        "image":"https://randomuser.me/api/portraits/men/50.jpg"
+    },
+    {
+        "id":6,
+        "name":"Mr Michael",
+        "rating":4.5,
+        "review":"I purchased this as my travel drone that would be easy to take with me on trips or for quick shoots. This impressed me a lot!",
+        "image":"https://randomuser.me/api/portraits/men/34.jpg"
+    },
+    {
+        "id":7,
+        "name":"Mr Hairston",
+        "rating":5,
+        "review":"This is simply an amazing device!",
+        "image":"https://randomuser.me/api/portraits/men/23.jpg"
+    },
+    {
+        "id":8,
+        "name":"Mr Phil",
+        "rating":4.2,
+        "review":"Easy to fly, very fun and great video. I love it!",
+        "image":"https://randomuser.me/api/portraits/men/43.jpg"
+    },
+    {
+        "id":9,
+        "name":"Mr Johan",
+        "rating":5,
+        "review":"The drone is fantastic, thus five stars. As for how to get started and operate the thing, DJI gets minus 5 stars.",
+        "image":"https://randomuser.me/api/portraits/men/97.jpg"
+    }
+]
