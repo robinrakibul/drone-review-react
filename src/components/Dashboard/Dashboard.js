@@ -44,6 +44,7 @@ const Dashboard = () => {
                     <RadarChart cx="50%" cy="50%" outerRadius="90%" data={charts}>
                         <PolarGrid />
                         <PolarAngleAxis dataKey="subject" />
+                        <Tooltip />
                         <PolarRadiusAxis />
                         <Radar name="Revenue" dataKey="revenue" stroke="#0275d8" fill="#5cb85c" fillOpacity={0.6} />
                     </RadarChart>
