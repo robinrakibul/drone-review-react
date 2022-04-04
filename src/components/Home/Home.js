@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home = (props) => {
@@ -14,7 +15,9 @@ const Home = (props) => {
                 <div className='me-5'>
                     <h1 className='main-title text-uppercase'>Capture Your Moments <span className='text-primary custom-text'>Flying</span></h1>
                     <h4>Buy The Drone And Make The Most Of Your Travel</h4>
-                    <button className='btn btn-primary p-3 mt-4'>Demonstration</button>
+                   <a href="https://www.youtube.com/watch?v=rB3Ntbzitd0" target="_blank">
+                   <button className='btn btn-primary p-3 mt-4'>Demonstration</button>
+                    </a> 
                 </div>
                 <div className='img-hover-zoom'>
                     <img className='rounded-3 mt-5' src="https://images.unsplash.com/photo-1512433457759-6222e69eade9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&height=420&q=100" alt="" />
@@ -34,7 +37,9 @@ const Home = (props) => {
                     ))
                 }
             </div>
-            <button className='btn btn-primary p-2 mt-4'>See All Reviews</button>
+            <Link to='/review'>
+                <button className='btn btn-primary p-2 mt-4'>See All Reviews</button>
+            </Link> 
         </div>
     );
 };
