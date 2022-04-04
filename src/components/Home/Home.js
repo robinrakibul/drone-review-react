@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Home.css';
 
 const Home = (props) => {
+    const navigate = useNavigate();
+    const navigateToReview = () =>{
+        navigate('/review');
+    }
     const [reviews, setReviews] = useState([])
     useEffect(() => {
         fetch('review.json')
@@ -15,7 +19,8 @@ const Home = (props) => {
                 <div className='me-5'>
                     <h1 className='main-title text-uppercase'>Capture Your Moments <span className='text-primary custom-text'>Flying</span></h1>
                     <h4>Buy The Drone And Make The Most Of Your Travel</h4>
-                   <a href="https://www.youtube.com/watch?v=rB3Ntbzitd0" target="_blank">
+                    {/* External link added */}
+                   <a href="https://www.youtube.com/watch?v=rB3Ntbzitd0" target="_blank" rel="noreferrer">
                    <button className='btn btn-primary p-3 mt-4'>Demonstration</button>
                     </a> 
                 </div>
@@ -28,18 +33,16 @@ const Home = (props) => {
             <div className='container d-flex justify-content-between'>
                 {
                     reviews.map(review => (
-                        <div className='border border-primary ps-5 pe-5 m-2'>
+                        <div className='border border-primary ps-5 pe-5 m-2 rounded-3'>
                             <img alt='user' src={review.image} className='mx-auto rounded-circle mt-3'/>
-                            <h4 className='text-warning mt-2'>{review.name}</h4>
+                            <h4 className='text-warning fw-bold mt-2'>{review.name}</h4>
                             <span className='mt-3 mb-3'>{review.comment}</span>
                             <span className='mt-3 mb-3 star-rating d-flex justify-content-center align-items-center'>Ratings: {review.rating} <img className='ps-2' src="star.svg" alt="" /> </span>
                         </div>
                     ))
                 }
             </div>
-            <Link to='/review'>
-                <button className='btn btn-primary p-2 mt-4'>See All Reviews</button>
-            </Link> 
+                <button onClick={navigateToReview} className='btn btn-primary p-2 mt-4'>See All Reviews</button>
         </div>
     );
 };
