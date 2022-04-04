@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CustomerReview from './components/CustomerReview/CustomerReview';
 import Dashboard from './components/Dashboard/Dashboard';
 import Blogs from './components/Blogs/Blogs';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

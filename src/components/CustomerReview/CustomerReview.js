@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import AllReviews from '../AllReviews/AllReviews';
 
 const CustomerReview = () => {
     const [reviews, setReviews] = useState([])
@@ -8,11 +9,15 @@ const CustomerReview = () => {
         .then(data=>setReviews(data))
     },[])
     return (
-        <div>
-            <h3>Total Reviews Available: {reviews.length}</h3>
-            {
-                reviews.map(review=><p>{review.name}</p>)
-            }
+        <div className='px-5 pb-5'>
+            <p className='text-warning mb-5'>Available Reviews: {reviews.length}</p>
+            <div className='d-grid row'>
+                {
+                    reviews.map(review=> (
+                        <AllReviews key={review.id} review={review}></AllReviews>
+                        ))
+                }
+            </div>
         </div>
     );
 };
