@@ -21,20 +21,20 @@ const Home = (props) => {
                 </div>
             </div>
 
-            <h2 className='mt-5 mb-5'>Customer Reviews ({reviews.length})</h2>
+            <h2 className='mt-5 mb-5 text-primary fw-bold'>Customer Reviews ({reviews.length})</h2>
             <div className='container d-flex justify-content-between'>
                 {
                     reviews.map(review => (
-                        <div className='border border-white ps-5 pe-5 m-2'>
+                        <div className='border border-primary ps-5 pe-5 m-2'>
                             <img alt='user' src={review.image} className='mx-auto rounded-circle mt-3'/>
                             <h4 className='text-warning mt-2'>{review.name}</h4>
-                            <span className='text-white mt-3 mb-3'>{review.comment}</span>
-                            <span className='text-white mt-3 mb-3 star-rating d-flex justify-content-center align-items-center'>Ratings: {review.rating} <img className='ps-2' src="star.svg" alt="" /> </span>
+                            <span className='mt-3 mb-3'>{review.comment}</span>
+                            <span className='mt-3 mb-3 star-rating d-flex justify-content-center align-items-center'>Ratings: {review.rating} <img className='ps-2' src="star.svg" alt="" /> </span>
                         </div>
                     ))
                 }
             </div>
-            <button className='btn btn-primary p-3 mt-4'>See All Reviews</button>
+            <button className='btn btn-primary p-2 mt-4'>See All Reviews</button>
         </div>
     );
 };

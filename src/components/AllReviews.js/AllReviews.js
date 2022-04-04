@@ -10,9 +10,9 @@ const AllReviews = ({ review }) => {
             </div>
           </div>
           <div className='d-flex flex-column justify-content-end'>
-            <h4 className='text-warning mt-2'>{review.name}</h4>
-            <span className='text-white mt-3 mb-3'>{review.comment}</span>
-            <span className='text-white mt-3 mb-3 star-rating d-flex justify-content-center align-items-center'>Ratings: {review.rating} <img className='ps-2' src="star.svg" alt="" /> </span>
+            <h4 className='text-primary fw-bold mt-2'>{review.name}</h4>
+            <span className='mb-2'>{review.comment}</span>
+            <h5 className='star-rating d-flex justify-content-center align-items-center'>Ratings: {review.rating} <img className='ps-2' src="star.svg" alt="" /> </h5>
           </div>
         </div>
     </div>

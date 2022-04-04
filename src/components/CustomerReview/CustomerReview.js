@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import AllReviews from '../AllReviews/AllReviews';
+import AllReviews from '../AllReviews.js/AllReviews';
 
 const CustomerReview = () => {
     const [reviews, setReviews] = useState([])
@@ -10,7 +10,7 @@ const CustomerReview = () => {
     },[])
     return (
         <div className='px-5 pb-5'>
-            <p className='text-warning mb-5'>Available Reviews: {reviews.length}</p>
+            <h2 className='text-primary fw-bold mb-5'>Available Reviews: {reviews.length}</h2>
             <div className='d-grid row'>
                 {
                     reviews.map(review=> (
