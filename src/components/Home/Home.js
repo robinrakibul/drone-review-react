@@ -15,9 +15,9 @@ const Home = (props) => {
     }, [])
     return (
         <div className='mb-5'>
-            <div className='d-flex flex-wrap justify-content-center container-fluid img-fluid'>
-                <div className='me-5'>
-                    <h1 className='main-title text-uppercase'>Capture Your Moments <span className='text-primary custom-text'>Flying</span></h1>
+            <div className='d-flex flex-wrap flex-md-nowrap flex-lg-nowrap justify-content-center container-fluid img-fluid'>
+                <div className='me-5 ps-5 ps-md-0 ps-lg-0'>
+                    <h1 className='main-title text-uppercase text-center'>Capture Your Moments <span className='text-primary custom-text'>Flying</span></h1>
                     <h4>Buy The Drone And Make The Most Of Your Travel</h4>
                     {/* External link added */}
                    <a href="https://www.youtube.com/watch?v=rB3Ntbzitd0" target="_blank" rel="noreferrer">
@@ -30,7 +30,7 @@ const Home = (props) => {
             </div>
 
             <h2 className='mt-5 mb-5 text-primary fw-bold'>Customer Reviews ({reviews.length})</h2>
-            <div className='container d-flex justify-content-between'>
+            <div className='container d-flex flex-wrap flex-lg-nowrap flex-md-nowrap justify-content-between'>
                 {
                     reviews.map(review => (
                         <div className='border border-primary ps-5 pe-5 m-2 rounded-3'>
