@@ -6,11 +6,7 @@ const AllReviews = ({ review }) => {
         <div>
           <div>
             <div>
-              <img
-                alt='user'
-                src={review.image}
-                className='mx-auto rounded-circle mt-3'
-              />
+              <img alt='user' src={review.image} className='mx-auto rounded-circle mt-3'/>
             </div>
           </div>
           <div className='d-flex flex-column justify-content-end'>
