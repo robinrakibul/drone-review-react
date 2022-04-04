@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className='d-flex flex-column flex-sm-column flex-md-row flex-lg-row justify-content-center mt-4 mb-4 container gap-5'>
                 <CustomLink to='/'>HOME</CustomLink>
-                <CustomLink to='/reviews'>REVIEWS</CustomLink>
+                <CustomLink to='/review'>REVIEWS</CustomLink>
                 <CustomLink to='/dashboard'>DASHBOARD</CustomLink>
                 <CustomLink to='/blogs'>BLOGS</CustomLink>
         </div>

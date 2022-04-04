@@ -1,16 +1,6 @@
-import React, { useEffect, useState } from 'react';
 import './Home.css';
 
-const Home = () => {
-    const [reviews, setReviews] = useState({})
-    useEffect(() => {
-        const url = 'review.json';
-        fetch(url)
-          .then(res => res.json())
-          .then(data => {
-            setReviews(data)
-          })
-      }, [])
+const Home = (props) => {
     return (
         <div>
             <div className='d-flex flex-wrap justify-content-center container-fluid img-fluid'>
@@ -22,10 +12,6 @@ const Home = () => {
                 <div className='img-hover-zoom'>
                     <img className='rounded-3 mt-5' src="https://images.unsplash.com/photo-1512433457759-6222e69eade9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&height=420&q=100" alt="" />
                 </div>
-            </div>
-            <div className='pt-5 mt-5 mb-5'>
-                <h1>Customer Review ({reviews.length})</h1>
-                
             </div>
         </div>
     );
